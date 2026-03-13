@@ -45,7 +45,7 @@
   }
 
   if (!event) {
-    container.innerHTML = `<p style="padding:24px;color:#b0b5c5;">Event not found.<br><small>id=${eventId}, day=${dayIndex}, events=${day ? day.events.length : 'no day'}</small></p>`;
+    container.innerHTML = '<p style="padding:24px;color:#b0b5c5;">Event not found.</p>';
     return;
   }
 
@@ -122,7 +122,7 @@
         <div class="other-sessions">
           <h3>Also featuring ${speaker.name}</h3>
           ${otherSessions.map(os => `
-            <a class="other-session-link" href="event.html?id=${os.id}&day=${os.dayIndex}${os.parentId ? '&parent=' + os.parentId : ''}">
+            <a class="other-session-link" href="event?id=${os.id}&day=${os.dayIndex}${os.parentId ? '&parent=' + os.parentId : ''}">
               <div class="os-title">${os.title}</div>
               <div class="os-meta">${os.dayLabel} · ${os.startTime} · ${os.roomLabel || ''}</div>
             </a>
