@@ -45,7 +45,7 @@
   }
 
   if (!event) {
-    container.innerHTML = '<p style="padding:24px;color:#b0b5c5;">Event not found.</p>';
+    container.innerHTML = `<p style="padding:24px;color:#b0b5c5;">Event not found.<br><small>id=${eventId}, day=${dayIndex}, events=${day ? day.events.length : 'no day'}</small></p>`;
     return;
   }
 
