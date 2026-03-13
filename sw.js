@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rnc-2026-v1';
+const CACHE_NAME = 'rnc-2026-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -37,14 +37,33 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Cache-first strategy for all requests
+// Network-first strategy for navigation, cache-first for assets
 self.addEventListener('fetch', (event) => {
+  // Skip non-GET requests
+  if (event.request.method !== 'GET') return;
+
+  // For navigation requests (HTML pages), use network-first
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // For other assets, use cache-first
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
       return fetch(event.request).then((response) => {
-        // Cache successful responses for images and other assets
-        if (response.ok && event.request.method === 'GET') {
+        if (response.ok) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
