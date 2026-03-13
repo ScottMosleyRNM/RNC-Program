@@ -1,0 +1,15 @@
+{
+  "rooms": [
+    { "id": "worship-center", "label": "Worship Center", "color": "#c0392b", "capacity": 3200 },
+    { "id": "fellowship-hall", "label": "Fellowship Hall", "color": "#c8a44e", "capacity": 3200 },
+    { "id": "room-101", "label": "Room 101", "color": "#2980b9", "capacity": 200 },
+    { "id": "room-102", "label": "Room 102", "color": "#27ae60", "capacity": 200 },
+    { "id": "room-201", "label": "Room 201", "color": "#8e44ad", "capacity": 200 },
+    { "id": "room-202", "label": "Room 202", "color": "#d35400", "capacity": 200 },
+    { "id": "room-203", "label": "Room 203", "color": "#16a085", "capacity": 200 },
+    { "id": "room-301", "label": "Room 301", "color": "#2c3e50", "capacity": 200 },
+    { "id": "room-302", "label": "Room 302", "color": "#f39c12", "capacity": 200 },
+    { "id": "room-303", "label": "Room 303", "color": "#1abc9c", "capacity": 200 },
+    { "id": "room-304", "label": "Room 304", "color": "#e74c3c", "capacity": 200 }
+  ]
+}

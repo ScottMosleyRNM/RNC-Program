@@ -1,0 +1,204 @@
+{
+  "days": [
+    {
+      "date": "2026-11-04",
+      "label": "Wednesday",
+      "dateDisplay": "November 4",
+      "tabLabel": "NOV 4",
+      "events": [
+        {
+          "id": "wed-main-1",
+          "title": "Main Session 1",
+          "type": "main",
+          "startTime": "1:00 PM",
+          "endTime": "2:45 PM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "Join us for the opening main session of the RightNow Conference 2026. This session sets the tone for the entire conference as we gather together in worship and hear powerful teaching from God's Word.",
+          "speakerIds": ["charlie-dates", "nicole-martin"]
+        },
+        {
+          "id": "wed-main-2",
+          "title": "Main Session 2",
+          "type": "main",
+          "startTime": "3:20 PM",
+          "endTime": "5:00 PM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "Our second main session continues with powerful teaching and worship as we dig deeper into what it means to follow Jesus and lead others well in our current cultural moment.",
+          "speakerIds": ["francis-chan", "lisa-chan"]
+        },
+        {
+          "id": "wed-concludes",
+          "title": "Day 1 Concludes",
+          "type": "info",
+          "startTime": "5:00 PM",
+          "endTime": "",
+          "room": "",
+          "roomLabel": "",
+          "description": "",
+          "speakerIds": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "label": "Thursday",
+      "dateDisplay": "November 5",
+      "tabLabel": "NOV 5",
+      "events": [
+        {
+          "id": "thu-main-1",
+          "title": "Main Session 3",
+          "type": "main",
+          "startTime": "9:00 AM",
+          "endTime": "10:45 AM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "We kick off Thursday with an inspiring main session to equip and encourage you for the day ahead. Come ready to worship and be challenged by the Word.",
+          "speakerIds": ["matt-chandler"]
+        },
+        {
+          "id": "thu-breakout-1",
+          "title": "Breakout Sessions A",
+          "type": "breakout-group",
+          "startTime": "11:15 AM",
+          "endTime": "12:00 PM",
+          "room": "various",
+          "roomLabel": "Various Rooms",
+          "description": "Choose from 9 breakout sessions covering a wide range of topics for pastors, church staff, and ministry leaders.",
+          "speakerIds": [],
+          "breakouts": [
+            { "id": "thu-bo-a1", "title": "Leading Through Uncertainty", "speakerId": "charlie-dates", "room": "Room 101", "description": "How do you lead your congregation through seasons of uncertainty and cultural upheaval? Learn practical strategies for staying grounded in the Gospel while navigating complex challenges." },
+            { "id": "thu-bo-a2", "title": "Discipling the Next Generation", "speakerId": "nicole-martin", "room": "Room 102", "description": "Explore effective approaches to reaching and discipling young people in your church and community." },
+            { "id": "thu-bo-a3", "title": "Church Planting Essentials", "speakerId": "francis-chan", "room": "Room 201", "description": "Francis shares lessons learned from planting churches both domestically and internationally." },
+            { "id": "thu-bo-a4", "title": "Marriage & Ministry", "speakerId": "lisa-chan", "room": "Room 202", "description": "Navigating the unique joys and challenges of doing ministry as a couple." },
+            { "id": "thu-bo-a5", "title": "Gospel-Centered Leadership", "speakerId": "robby-angle", "room": "Room 203", "description": "What does it look like to lead with the Gospel at the center of every decision?" },
+            { "id": "thu-bo-a6", "title": "Preaching That Transforms", "speakerId": "matt-chandler", "room": "Room 301", "description": "Practical insights on sermon preparation and delivery that leads to real life change." },
+            { "id": "thu-bo-a7", "title": "The Global Church", "speakerId": "libin-abraham", "room": "Room 302", "description": "How the global church is thriving and what the Western church can learn from believers around the world." },
+            { "id": "thu-bo-a8", "title": "Developing Emerging Leaders", "speakerId": "phillip-anthony-mitchell", "room": "Room 303", "description": "How to identify, develop, and empower the next generation of leaders in your church." },
+            { "id": "thu-bo-a9", "title": "Women in Ministry Leadership", "speakerId": "jennie-allen", "room": "Room 304", "description": "Exploring how to effectively champion and support women in ministry leadership roles." }
+          ]
+        },
+        {
+          "id": "thu-lunch",
+          "title": "Lunch (Included)",
+          "type": "info",
+          "startTime": "12:10 PM",
+          "endTime": "12:45 PM",
+          "room": "fellowship-hall",
+          "roomLabel": "Fellowship Hall",
+          "description": "Lunch is provided for all conference attendees.",
+          "speakerIds": []
+        },
+        {
+          "id": "thu-breakout-2",
+          "title": "Breakout Sessions B",
+          "type": "breakout-group",
+          "startTime": "12:45 PM",
+          "endTime": "1:30 PM",
+          "room": "various",
+          "roomLabel": "Various Rooms",
+          "description": "A second round of breakout sessions. Choose a different topic or go deeper on a subject from this morning.",
+          "speakerIds": [],
+          "breakouts": [
+            { "id": "thu-bo-b1", "title": "Racial Reconciliation in the Church", "speakerId": "charlie-dates", "room": "Room 101", "description": "A candid and hopeful conversation about the church's role in pursuing racial unity and justice." },
+            { "id": "thu-bo-b2", "title": "Teaching the Bible Creatively", "speakerId": "nicole-martin", "room": "Room 102", "description": "Fresh approaches to communicating Scripture in ways that engage and transform your audience." },
+            { "id": "thu-bo-b3", "title": "Radical Generosity", "speakerId": "francis-chan", "room": "Room 201", "description": "What happens when a church takes Jesus' words about giving seriously? Stories and principles from the front lines." },
+            { "id": "thu-bo-b4", "title": "Parenting in Ministry", "speakerId": "lisa-chan", "room": "Room 202", "description": "Balancing the demands of ministry with being present and intentional parents." },
+            { "id": "thu-bo-b5", "title": "Building Healthy Teams", "speakerId": "robby-angle", "room": "Room 203", "description": "How to cultivate a church staff culture that is healthy, productive, and gospel-shaped." },
+            { "id": "thu-bo-b6", "title": "Pastoral Care & Mental Health", "speakerId": "matt-chandler", "room": "Room 301", "description": "Addressing mental health in the church with compassion, wisdom, and theological grounding." },
+            { "id": "thu-bo-b7", "title": "Missions in a Post-Pandemic World", "speakerId": "libin-abraham", "room": "Room 302", "description": "How the missions landscape has changed and how your church can engage effectively." },
+            { "id": "thu-bo-b8", "title": "Leading with Emotional Intelligence", "speakerId": "phillip-anthony-mitchell", "room": "Room 303", "description": "Why EQ matters in ministry leadership and how to grow in self-awareness and empathy." },
+            { "id": "thu-bo-b9", "title": "Restoring Your Soul", "speakerId": "jennie-allen", "room": "Room 304", "description": "Practices and rhythms for staying spiritually healthy when ministry feels draining." }
+          ]
+        },
+        {
+          "id": "thu-breakout-3",
+          "title": "Breakout Sessions C",
+          "type": "breakout-group",
+          "startTime": "2:00 PM",
+          "endTime": "2:45 PM",
+          "room": "various",
+          "roomLabel": "Various Rooms",
+          "description": "The final round of breakout sessions for the day. Make the most of this time before our closing main session.",
+          "speakerIds": [],
+          "breakouts": [
+            { "id": "thu-bo-c1", "title": "Preaching for Cultural Engagement", "speakerId": "charlie-dates", "room": "Room 101", "description": "How to faithfully preach the Gospel in a way that speaks to the cultural realities your congregation faces." },
+            { "id": "thu-bo-c2", "title": "Small Groups That Stick", "speakerId": "nicole-martin", "room": "Room 102", "description": "Strategies for building a vibrant small group ministry where real community and discipleship happen." },
+            { "id": "thu-bo-c3", "title": "Simplifying Church", "speakerId": "francis-chan", "room": "Room 201", "description": "Returning to the basics of what the church was always meant to be." },
+            { "id": "thu-bo-c4", "title": "Hospitality as Ministry", "speakerId": "lisa-chan", "room": "Room 202", "description": "How the practice of hospitality can transform relationships and build authentic community." },
+            { "id": "thu-bo-c5", "title": "Resilient Faith", "speakerId": "robby-angle", "room": "Room 203", "description": "Building a faith that endures through suffering, doubt, and the storms of life." },
+            { "id": "thu-bo-c6", "title": "Navigating Church Conflict", "speakerId": "matt-chandler", "room": "Room 301", "description": "Practical wisdom for addressing and resolving conflict within your church in a healthy way." },
+            { "id": "thu-bo-c7", "title": "Cross-Cultural Ministry", "speakerId": "libin-abraham", "room": "Room 302", "description": "How to serve and lead in an increasingly diverse and multicultural ministry context." },
+            { "id": "thu-bo-c8", "title": "Communication That Connects", "speakerId": "phillip-anthony-mitchell", "room": "Room 303", "description": "Becoming a more compelling and authentic communicator of the Gospel." },
+            { "id": "thu-bo-c9", "title": "Fighting for Community", "speakerId": "jennie-allen", "room": "Room 304", "description": "Why isolation is the enemy and how to build deep, honest relationships in the local church." }
+          ]
+        },
+        {
+          "id": "thu-main-2",
+          "title": "Main Session 4",
+          "type": "main",
+          "startTime": "3:15 PM",
+          "endTime": "5:00 PM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "Our closing main session for Thursday features three speakers bringing powerful messages to send us into the evening encouraged, challenged, and equipped.",
+          "speakerIds": ["robby-angle", "libin-abraham", "phillip-anthony-mitchell"]
+        },
+        {
+          "id": "thu-concludes",
+          "title": "Day 2 Concludes",
+          "type": "info",
+          "startTime": "5:00 PM",
+          "endTime": "",
+          "room": "",
+          "roomLabel": "",
+          "description": "",
+          "speakerIds": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "label": "Friday",
+      "dateDisplay": "November 6",
+      "tabLabel": "NOV 6",
+      "events": [
+        {
+          "id": "fri-main-1",
+          "title": "Main Session 5",
+          "type": "main",
+          "startTime": "9:00 AM",
+          "endTime": "10:30 AM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "Our first session on the final day of the conference. Come ready to be encouraged and equipped for the ministry that awaits you back home.",
+          "speakerIds": ["jennie-allen", "matt-chandler"]
+        },
+        {
+          "id": "fri-main-2",
+          "title": "Main Session 6",
+          "type": "main",
+          "startTime": "10:55 AM",
+          "endTime": "12:15 PM",
+          "room": "worship-center",
+          "roomLabel": "Worship Center",
+          "description": "The closing session of the RightNow Conference 2026. We end our time together in worship and with a powerful final message to carry with you into the next season of ministry.",
+          "speakerIds": ["francis-chan"]
+        },
+        {
+          "id": "fri-concludes",
+          "title": "Conference Concludes",
+          "type": "info",
+          "startTime": "12:15 PM",
+          "endTime": "",
+          "room": "",
+          "roomLabel": "",
+          "description": "Thank you for joining us! Safe travels home.",
+          "speakerIds": []
+        }
+      ]
+    }
+  ]
+}

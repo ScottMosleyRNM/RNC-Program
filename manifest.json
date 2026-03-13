@@ -1,0 +1,21 @@
+{
+  "name": "RightNow Conference 2026",
+  "short_name": "RNC 2026",
+  "description": "Digital program for the RightNow Conference, Nov 4-6, 2026",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1a1f2e",
+  "theme_color": "#1a1f2e",
+  "icons": [
+    {
+      "src": "images/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

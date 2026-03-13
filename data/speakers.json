@@ -1,0 +1,85 @@
+{
+  "speakers": [
+    {
+      "id": "charlie-dates",
+      "name": "Charlie Dates",
+      "title": "Senior Pastor",
+      "church": "Progressive Baptist Church, Chicago",
+      "bio": "Dr. Charlie Dates is the senior pastor of Progressive Baptist Church on the south side of Chicago. He is a thought leader, preacher, and author committed to the intersection of the Gospel and justice. Charlie also serves as an affiliate professor of theology at Trinity Evangelical Divinity School. He has been featured in Christianity Today, The Washington Post, and numerous other publications. Charlie and his wife, Kirstie, live in Chicago with their children.",
+      "initials": "CD",
+      "color": "#3a5a8c"
+    },
+    {
+      "id": "nicole-martin",
+      "name": "Nicole Martin",
+      "title": "Author & Speaker",
+      "church": "",
+      "bio": "Nicole Martin is a passionate communicator, author, and Bible teacher who loves to see people encounter the living God through His Word. She has spoken at conferences and events around the country, encouraging believers to dive deeper into Scripture and live out their faith boldly. Nicole brings warmth, humor, and biblical depth to every message she delivers.",
+      "initials": "NM",
+      "color": "#8c3a5a"
+    },
+    {
+      "id": "francis-chan",
+      "name": "Francis Chan",
+      "title": "Author & Speaker",
+      "church": "We Are Church",
+      "bio": "Francis Chan is the bestselling author of Crazy Love, Forgotten God, and Erasing Hell. He is the founder of Eternity Bible College and has planted multiple churches. Francis and his wife, Lisa, have been involved in church planting in San Francisco and internationally. He is known for his passionate, biblical teaching that calls believers to radical obedience and wholehearted love for God.",
+      "initials": "FC",
+      "color": "#5a8c3a"
+    },
+    {
+      "id": "lisa-chan",
+      "name": "Lisa Chan",
+      "title": "Author & Speaker",
+      "church": "We Are Church",
+      "bio": "Lisa Chan is an author, speaker, and church planter. She co-authored the book You and Me Forever with her husband, Francis. Lisa has a heart for discipleship and sees everyday life as an opportunity to point others toward Jesus. She and Francis have been involved in church planting both domestically and overseas.",
+      "initials": "LC",
+      "color": "#8c5a3a"
+    },
+    {
+      "id": "robby-angle",
+      "name": "Robby Angle",
+      "title": "Pastor & Speaker",
+      "church": "",
+      "bio": "Robby Angle is a pastor, speaker, and ministry leader who is passionate about equipping the local church. He brings a unique combination of theological depth and practical wisdom to his teaching. Robby has spoken at numerous conferences and events, challenging believers to live with gospel intentionality in every area of life.",
+      "initials": "RA",
+      "color": "#3a8c8c"
+    },
+    {
+      "id": "matt-chandler",
+      "name": "Matt Chandler",
+      "title": "Pastor & Author",
+      "church": "",
+      "bio": "Matt Chandler serves as a pastor and is a widely respected Bible teacher and author. He has written several bestselling books including The Explicit Gospel, Recovering Redemption, and Take Heart. Matt is known for his honest, passionate, and gospel-centered teaching. He and his wife, Lauren, live in the Dallas area with their three children.",
+      "initials": "MC",
+      "color": "#5a3a8c"
+    },
+    {
+      "id": "libin-abraham",
+      "name": "Libin Abraham",
+      "title": "Pastor & Speaker",
+      "church": "",
+      "bio": "Libin Abraham is a pastor, speaker, and ministry leader with a passion for the global church. He brings a cross-cultural perspective to his teaching and has a heart for seeing the Gospel proclaimed among all nations. Libin has spoken at conferences and churches across the country, encouraging believers to live on mission.",
+      "initials": "LA",
+      "color": "#8c8c3a"
+    },
+    {
+      "id": "phillip-anthony-mitchell",
+      "name": "Phillip Anthony Mitchell",
+      "title": "Speaker & Leader",
+      "church": "",
+      "bio": "Phillip Anthony Mitchell is a dynamic speaker and ministry leader known for his engaging and thought-provoking messages. He is passionate about leadership development and helping the next generation of church leaders thrive. Phillip has served in various ministry contexts and brings energy and insight to every platform he is given.",
+      "initials": "PM",
+      "color": "#3a8c5a"
+    },
+    {
+      "id": "jennie-allen",
+      "name": "Jennie Allen",
+      "title": "Author & Founder of IF:Gathering",
+      "church": "",
+      "bio": "Jennie Allen is the New York Times bestselling author of Get Out of Your Head, Find Your People, and Anything. She is the founder and visionary of IF:Gathering, a movement that has reached millions of women around the world. Jennie is passionate about discipling women and calling them to live what they believe. She and her husband, Zac, live in Dallas with their four children.",
+      "initials": "JA",
+      "color": "#8c3a8c"
+    }
+  ]
+}
