@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rnc-2026-v2';
+const CACHE_NAME = 'rnc-2026-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -44,6 +44,22 @@ self.addEventListener('fetch', (event) => {
 
   // For navigation requests (HTML pages), use network-first
   if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // For JSON data files, use network-first so updates take effect immediately
+  if (event.request.url.endsWith('.json')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
