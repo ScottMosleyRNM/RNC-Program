@@ -109,7 +109,7 @@
 
     html += `
       <div class="speaker-detail">
-        ${App.speakerPlaceholder(speaker, 200, 220)}
+        ${App.speakerImage(speaker, 200, 220)}
         <div class="speaker-name">${speaker.name}</div>
         ${speaker.title ? `<div class="speaker-title-org">${speaker.title}${speaker.church ? ', ' + speaker.church : ''}</div>` : ''}
         <div class="speaker-divider"></div>

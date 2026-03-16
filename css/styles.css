@@ -817,6 +817,44 @@ body {
    Utilities
    ============================================ */
 
+/* ---- Progressive Image Loading ---- */
+.prog-img {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prog-img .prog-img-initials {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  z-index: 0;
+}
+
+.prog-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.prog-img.loaded img {
+  opacity: 1;
+}
+
+.prog-img.round {
+  border-radius: 50%;
+}
+
+.prog-img.round img {
+  border-radius: 50%;
+}
+
 .placeholder-img {
   display: flex;
   align-items: center;

@@ -5,6 +5,7 @@
       "listings": [
         {
           "name": "Pecan Lodge",
+          "image": "images/explore/pecan-lodge.webp",
           "type": "BBQ",
           "address": "2702 Main St, Dallas, TX 75226",
           "mapsUrl": "https://maps.google.com/?q=Pecan+Lodge+Dallas",
@@ -13,6 +14,7 @@
         },
         {
           "name": "Terry Black's BBQ",
+          "image": "images/explore/terry-blacks.webp",
           "type": "BBQ",
           "address": "3025 Main St, Dallas, TX 75226",
           "mapsUrl": "https://maps.google.com/?q=Terry+Blacks+BBQ+Dallas",
@@ -21,6 +23,7 @@
         },
         {
           "name": "Meso Maya",
+          "image": "images/explore/meso-maya.webp",
           "type": "Mexican",
           "address": "1611 McKinney Ave, Dallas, TX 75202",
           "mapsUrl": "https://maps.google.com/?q=Meso+Maya+Dallas",
@@ -29,6 +32,7 @@
         },
         {
           "name": "Velvet Taco",
+          "image": "images/explore/velvet-taco.webp",
           "type": "Tacos",
           "address": "3012 N Henderson Ave, Dallas, TX 75206",
           "mapsUrl": "https://maps.google.com/?q=Velvet+Taco+Dallas",
@@ -37,6 +41,7 @@
         },
         {
           "name": "Cane Rosso",
+          "image": "images/explore/cane-rosso.webp",
           "type": "Pizza",
           "address": "2612 Commerce St, Dallas, TX 75226",
           "mapsUrl": "https://maps.google.com/?q=Cane+Rosso+Dallas",
@@ -50,6 +55,7 @@
       "listings": [
         {
           "name": "Houndstooth Coffee",
+          "image": "images/explore/houndstooth-coffee.webp",
           "type": "Specialty Coffee",
           "address": "1900 N Henderson Ave, Dallas, TX 75206",
           "mapsUrl": "https://maps.google.com/?q=Houndstooth+Coffee+Dallas",
@@ -58,6 +64,7 @@
         },
         {
           "name": "Oak Cliff Coffee Roasters",
+          "image": "images/explore/oak-cliff-coffee.webp",
           "type": "Local Roaster",
           "address": "642 W Davis St, Dallas, TX 75208",
           "mapsUrl": "https://maps.google.com/?q=Oak+Cliff+Coffee+Dallas",
@@ -66,6 +73,7 @@
         },
         {
           "name": "Weekend Coffee",
+          "image": "images/explore/weekend-coffee.webp",
           "type": "Cafe",
           "address": "1511 Commerce St, Dallas, TX 75201",
           "mapsUrl": "https://maps.google.com/?q=Weekend+Coffee+Dallas",
@@ -79,6 +87,7 @@
       "listings": [
         {
           "name": "Dallas Arboretum",
+          "image": "images/explore/dallas-arboretum.webp",
           "type": "Gardens & Nature",
           "address": "8525 Garland Rd, Dallas, TX 75218",
           "mapsUrl": "https://maps.google.com/?q=Dallas+Arboretum",
@@ -87,6 +96,7 @@
         },
         {
           "name": "Reunion Tower GeO-Deck",
+          "image": "images/explore/reunion-tower.webp",
           "type": "Observation Tower",
           "address": "300 Reunion Blvd E, Dallas, TX 75207",
           "mapsUrl": "https://maps.google.com/?q=Reunion+Tower+Dallas",
@@ -95,6 +105,7 @@
         },
         {
           "name": "Bishop Arts District",
+          "image": "images/explore/bishop-arts.webp",
           "type": "Shopping & Dining",
           "address": "Bishop Ave & W Davis St, Dallas, TX",
           "mapsUrl": "https://maps.google.com/?q=Bishop+Arts+District+Dallas",
@@ -103,6 +114,7 @@
         },
         {
           "name": "Klyde Warren Park",
+          "image": "images/explore/klyde-warren-park.webp",
           "type": "Urban Park & Food Trucks",
           "address": "2012 Woodall Rodgers Fwy, Dallas, TX 75201",
           "mapsUrl": "https://maps.google.com/?q=Klyde+Warren+Park+Dallas",

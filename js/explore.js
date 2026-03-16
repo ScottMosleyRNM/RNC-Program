@@ -19,9 +19,7 @@
     const cat = categories[activeTab];
     listEl.innerHTML = cat.listings.map(listing => `
       <div class="listing-card">
-        <div class="listing-img placeholder-img" style="height:160px;background:linear-gradient(135deg,var(--bg-card),var(--bg-secondary));font-size:2rem;">
-          ${listing.type === 'BBQ' ? '🍖' : listing.type === 'Mexican' ? '🌮' : listing.type === 'Tacos' ? '🌮' : listing.type === 'Pizza' ? '🍕' : listing.type.includes('Coffee') || listing.type.includes('Cafe') || listing.type.includes('Roaster') ? '☕' : listing.type.includes('Garden') ? '🌿' : listing.type.includes('Tower') || listing.type.includes('Observation') ? '🏙️' : listing.type.includes('Shopping') ? '🛍️' : listing.type.includes('Park') ? '🌳' : '📍'}
-        </div>
+        ${App.listingImage(listing, 160)}
         <div class="listing-body">
           <div class="listing-name">${listing.name}</div>
           <div class="listing-type">${listing.type}</div>

@@ -51,7 +51,7 @@
               <div class="event-speakers-photos">
                 ${eventSpeakers.map(s => `
                   <div class="speaker-photo-card">
-                    ${App.speakerPlaceholder(s, 120, 140)}
+                    ${App.speakerImage(s, 120, 140)}
                     <div class="speaker-name-label">${s.name}</div>
                   </div>
                 `).join('')}
@@ -69,7 +69,7 @@
                 const sp = speakerMap[bo.speakerId];
                 return `
                   <a class="breakout-item" href="event?id=${bo.id}&day=${dayIndex}&parent=${event.id}">
-                    ${sp ? App.speakerPlaceholderRound(sp, 52) : ''}
+                    ${sp ? App.speakerImageRound(sp, 52) : ''}
                     <div class="breakout-item-info">
                       <div class="breakout-item-title">${bo.title}</div>
                       <div class="breakout-item-speaker">${sp ? sp.name : ''}</div>
