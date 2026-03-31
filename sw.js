@@ -3,34 +3,37 @@
    Two-tier caching for 3,200 users on shared wifi
    ============================================ */
 
-const SHELL_CACHE = 'rnc-shell-v5';
-const DATA_CACHE = 'rnc-data-v5';
+// Determine base path dynamically (works on both root and subdirectory deploys)
+const BASE = new URL('./', self.location).pathname;
+
+const SHELL_CACHE = 'rnc-shell-v6';
+const DATA_CACHE = 'rnc-data-v6';
 const IMAGE_CACHE = 'rnc-images';       // Never versioned — images persist across updates
 const WHATSNEW_CACHE = 'rnc-whatsnew';   // Network-first, clearable for fresh announcements
 
 // App shell — pre-cached on install for instant loading
 const SHELL_ASSETS = [
-  '/',
-  '/index.html',
-  '/event.html',
-  '/map.html',
-  '/explore.html',
-  '/whatsnew.html',
-  '/css/styles.css',
-  '/js/app.js',
-  '/js/schedule.js',
-  '/js/event-detail.js',
-  '/js/map.js',
-  '/js/explore.js',
-  '/manifest.json'
+  BASE,
+  BASE + 'index.html',
+  BASE + 'event.html',
+  BASE + 'map.html',
+  BASE + 'explore.html',
+  BASE + 'whatsnew.html',
+  BASE + 'css/styles.css',
+  BASE + 'js/app.js',
+  BASE + 'js/schedule.js',
+  BASE + 'js/event-detail.js',
+  BASE + 'js/map.js',
+  BASE + 'js/explore.js',
+  BASE + 'manifest.json'
 ];
 
 // Data files — network-first so schedule changes propagate immediately
 const DATA_ASSETS = [
-  '/data/schedule.json',
-  '/data/speakers.json',
-  '/data/venues.json',
-  '/data/local-guide.json'
+  BASE + 'data/schedule.json',
+  BASE + 'data/speakers.json',
+  BASE + 'data/venues.json',
+  BASE + 'data/local-guide.json'
 ];
 
 // Pre-cache shell and data on install
@@ -65,20 +68,20 @@ function precacheAllImages() {
   const fetchJSON = (url) => fetch(url).then(r => r.json()).catch(() => null);
 
   Promise.all([
-    fetchJSON('/data/speakers.json'),
-    fetchJSON('/data/local-guide.json')
+    fetchJSON(BASE + 'data/speakers.json'),
+    fetchJSON(BASE + 'data/local-guide.json')
   ]).then(([speakersData, guideData]) => {
     const imageUrls = [];
 
     if (speakersData && speakersData.speakers) {
       for (const s of speakersData.speakers) {
-        if (s.image) imageUrls.push(s.image);
+        if (s.image) imageUrls.push(BASE + s.image);
       }
     }
     if (guideData && guideData.categories) {
       for (const cat of guideData.categories) {
         for (const item of (cat.listings || [])) {
-          if (item.image) imageUrls.push(item.image);
+          if (item.image) imageUrls.push(BASE + item.image);
         }
       }
     }
@@ -117,7 +120,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   // --- JSON data files: network-first so updates propagate ---
-  if (url.pathname.endsWith('.json') && url.pathname.startsWith('/data/')) {
+  if (url.pathname.endsWith('.json') && url.pathname.includes('/data/')) {
     event.respondWith(networkFirst(event.request, DATA_CACHE));
     return;
   }

@@ -40,13 +40,13 @@
       } else if (event.type === 'main') {
         const eventSpeakers = event.speakerIds.map(id => speakerMap[id]).filter(Boolean);
         html += `
-          <div class="event-card" onclick="location.href='event?id=${event.id}&day=${dayIndex}'">
+          <div class="event-card" onclick="location.href='event.html?id=${event.id}&day=${dayIndex}'">
             <div class="event-time">${event.startTime}</div>
             <div class="event-content">
               <div class="event-info">
                 <div class="event-title">${event.title}</div>
                 <div class="event-location">${event.roomLabel}</div>
-                <a class="btn-details" href="event?id=${event.id}&day=${dayIndex}">Details</a>
+                <a class="btn-details" href="event.html?id=${event.id}&day=${dayIndex}">Details</a>
               </div>
               <div class="event-speakers-photos">
                 ${eventSpeakers.map(s => `
@@ -68,7 +68,7 @@
               ${event.breakouts.map(bo => {
                 const sp = speakerMap[bo.speakerId];
                 return `
-                  <a class="breakout-item" href="event?id=${bo.id}&day=${dayIndex}&parent=${event.id}">
+                  <a class="breakout-item" href="event.html?id=${bo.id}&day=${dayIndex}&parent=${event.id}">
                     ${sp ? App.speakerImageRound(sp, 52) : ''}
                     <div class="breakout-item-info">
                       <div class="breakout-item-title">${bo.title}</div>

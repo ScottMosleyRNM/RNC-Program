@@ -122,7 +122,7 @@
         <div class="other-sessions">
           <h3>Also featuring ${speaker.name}</h3>
           ${otherSessions.map(os => `
-            <a class="other-session-link" href="event?id=${os.id}&day=${os.dayIndex}${os.parentId ? '&parent=' + os.parentId : ''}">
+            <a class="other-session-link" href="event.html?id=${os.id}&day=${os.dayIndex}${os.parentId ? '&parent=' + os.parentId : ''}">
               <div class="os-title">${os.title}</div>
               <div class="os-meta">${os.dayLabel} · ${os.startTime} · ${os.roomLabel || ''}</div>
             </a>
