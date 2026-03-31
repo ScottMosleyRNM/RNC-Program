@@ -6,8 +6,8 @@
 // Determine base path dynamically (works on both root and subdirectory deploys)
 const BASE = new URL('./', self.location).pathname;
 
-const SHELL_CACHE = 'rnc-shell-v6';
-const DATA_CACHE = 'rnc-data-v6';
+const SHELL_CACHE = 'rnc-shell-v7';
+const DATA_CACHE = 'rnc-data-v7';
 const IMAGE_CACHE = 'rnc-images';       // Never versioned — images persist across updates
 const WHATSNEW_CACHE = 'rnc-whatsnew';   // Network-first, clearable for fresh announcements
 
@@ -136,6 +136,7 @@ self.addEventListener('fetch', (event) => {
 });
 
 // Network-first: try network, update cache, fall back to cache
+// Uses ignoreSearch so event.html?id=X matches cached event.html
 function networkFirst(request, cacheName) {
   return fetch(request)
     .then((response) => {
@@ -145,7 +146,11 @@ function networkFirst(request, cacheName) {
       }
       return response;
     })
-    .catch(() => caches.match(request));
+    .catch(() =>
+      caches.match(request, { ignoreSearch: true }).then((resp) =>
+        resp || new Response('Offline', { status: 503, statusText: 'Offline' })
+      )
+    );
 }
 
 // Cache-first: serve from cache, fall back to network and cache the response
