@@ -3,8 +3,8 @@
    Two-tier caching for 3,200 users on shared wifi
    ============================================ */
 
-const SHELL_CACHE = 'rnc-shell-v4';
-const DATA_CACHE = 'rnc-data-v4';
+const SHELL_CACHE = 'rnc-shell-v5';
+const DATA_CACHE = 'rnc-data-v5';
 const IMAGE_CACHE = 'rnc-images';       // Never versioned — images persist across updates
 const WHATSNEW_CACHE = 'rnc-whatsnew';   // Network-first, clearable for fresh announcements
 
@@ -44,7 +44,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Clean up old versioned caches on activate, but preserve image cache
+// Clean up old caches, then eagerly pre-cache all images in the background
 self.addEventListener('activate', (event) => {
   const keepCaches = [SHELL_CACHE, DATA_CACHE, IMAGE_CACHE, WHATSNEW_CACHE];
   event.waitUntil(
@@ -55,7 +55,49 @@ self.addEventListener('activate', (event) => {
     )
   );
   self.clients.claim();
+
+  // Pre-cache all images so the app works fully offline
+  precacheAllImages();
 });
+
+// Read image URLs from data files and cache them all in the background
+function precacheAllImages() {
+  const fetchJSON = (url) => fetch(url).then(r => r.json()).catch(() => null);
+
+  Promise.all([
+    fetchJSON('/data/speakers.json'),
+    fetchJSON('/data/local-guide.json')
+  ]).then(([speakersData, guideData]) => {
+    const imageUrls = [];
+
+    if (speakersData && speakersData.speakers) {
+      for (const s of speakersData.speakers) {
+        if (s.image) imageUrls.push(s.image);
+      }
+    }
+    if (guideData && guideData.categories) {
+      for (const cat of guideData.categories) {
+        for (const item of (cat.listings || [])) {
+          if (item.image) imageUrls.push(item.image);
+        }
+      }
+    }
+
+    if (imageUrls.length === 0) return;
+
+    caches.open(IMAGE_CACHE).then((cache) => {
+      for (const url of imageUrls) {
+        cache.match(url).then((existing) => {
+          if (!existing) {
+            fetch(url).then((resp) => {
+              if (resp.ok) cache.put(url, resp);
+            }).catch(() => {});
+          }
+        });
+      }
+    });
+  });
+}
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
